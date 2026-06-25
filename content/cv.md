@@ -18,16 +18,16 @@ hideFooter: true
 
 ## Research Focus
 
-Biomedical AI, medical image analysis, and agentic AI systems for real-world evidence generation.
+Biomedical AI methods for robust medical imaging and reproducible real-world evidence generation.
 
-Core topics: CT metal artifact reduction, few-shot learning, target-trial emulation, OMOP-CDM, and clinical AI agents.
+Core topics: CT metal artifact reduction, few-shot clinical imaging, target-trial emulation, OMOP-CDM, cohort construction, and evaluation reliability.
 
 ## Education
 
 ### Seoul National University
 **Ph.D Student, Bioengineering**
 
-*2025 - Present*
+*Sep 2025 - Present*
 
 ### Inha University
 **M.S., Computer Engineering**
@@ -44,36 +44,32 @@ Core topics: CT metal artifact reduction, few-shot learning, target-trial emulat
 ### Seoul National University, BiLab
 **Ph.D Student, Bioengineering**
 
-*2025 - Present*
+*Sep 2025 - Present*
 
-- Researching biomedical AI, medical image analysis, and real-world evidence generation.
-- Building agentic clinical research systems and robust medical imaging methods.
-- Developed LangGraph-MAR, a graph-based framework for CT metal artifact reduction.
-- Combined sinogram inpainting, L1-based metal soft-thresholding, reconstruction, and automated image quality assessment.
-- Published the work in *Physics in Medicine & Biology*.
+- Researching robust medical imaging and reproducible real-world evidence generation.
+- Building clinically auditable AI workflows around OMOP-CDM, target-trial emulation, and medical image evaluation.
 
-### Biomedical Engineering Research Institute, Chungnam National University
+### Chungnam University Medical Engineering Laboratory
 **Visiting Researcher**
 
 *Dec 2023 - Dec 2024*
 
-- Developed a CT metal artifact reduction and enhancement model for the AAPM Grand Challenge.
-- Designed graph-based CT metal artifact reduction approaches using LangGraph.
+- Developed CT metal artifact reduction and enhancement methods for the AAPM Grand Challenge.
+- Built evaluation workflows for medical image restoration experiments.
 
-### DB Insurance (DB손해보험)
-**Senior Staff**
+### DB Insurance Co., Ltd. (DB손해보험)
+**Senior Manager**
 
-*Oct 2022 - Nov 2023*
+*Oct 2022 - Aug 2025*
 
-- Worked as senior staff at DB Insurance.
+- Worked on knowledge acquisition and generative-AI initiatives in an enterprise insurance setting.
 
 ### FA Solution
 **AI Researcher**
 
 *Mar 2021 - Oct 2022*
 
-- Worked as an AI researcher in Seoul, Republic of Korea.
-- Built applied AI experience before returning to biomedical AI research.
+- Worked on applied AI and computer-vision development in a product-facing research setting.
 
 ### Medical AI Expert Training, Korea Human Resource Development Institute
 **Team Leader**
@@ -108,7 +104,7 @@ Core topics: CT metal artifact reduction, few-shot learning, target-trial emulat
 *Oct 2025*
 
 - Led the team that won the Grand Prize at KCD2025.
-- Built a multi-agent framework for emulating registered clinical trials with observational data.
+- Built a target-trial emulation workflow for mapping trial protocols to observational cohorts, statistical analysis, and reproducible reporting.
 - Integrated trial protocol extraction, MIMIC-IV cohort selection, statistical analysis, and automated reporting.
 
 ### AAPM Grand Challenge
@@ -118,17 +114,15 @@ Core topics: CT metal artifact reduction, few-shot learning, target-trial emulat
 
 - Ranked 21st overall with a CT metal artifact reduction and enhancement model.
 
-## Invited Talks
+## Talks & Presentations
 
 ### SNU AI.MED 26 Gwanak
-**Iterative virtual clinical trial simulation: multi-agent collaboration-based automated real-world evidence generation system**
+**Iterative virtual clinical trial simulation for automated real-world evidence generation**
 
 *Student Research Presentation, SNU AI.MED 26 Gwanak, Seoul National University | Jun 19, 2026*
 
 - Presented in Session 2, Student Research Presentations.
 - Event: 2026-1 Semester SNU Medical AI Convergence Talent Training Program Performance Sharing Meeting.
-- Venue: Seoul National University Gwanak Campus 43-2 B102, Seoul, Republic of Korea.
-- Original title: "반복적 가상 임상시험 시뮬레이션: 멀티에이전트 협업 기반 실사용근거 생성 자동화 시스템."
 
 ## Selected Publications
 
@@ -164,11 +158,11 @@ Core topics: CT metal artifact reduction, few-shot learning, target-trial emulat
 - Repository: [https://github.com/clinical-ontology-embeddings/omop-medcat-silver](https://github.com/clinical-ontology-embeddings/omop-medcat-silver)
 
 ### snubilab/metric-dashboard
-**TypeScript - Educational metric dashboard for medical imaging and ML evaluation**
+**TypeScript - Educational web dashboard for medical imaging and ML evaluation**
 
 *2026*
 
-- Built an educational React/Vite dashboard for learning medical-imaging and machine-learning evaluation metrics.
+- Built an educational web dashboard for learning medical-imaging and machine-learning evaluation metrics.
 - Live site: [https://snubilab.github.io/metric-dashboard/](https://snubilab.github.io/metric-dashboard/)
 - Repository: [https://github.com/snubilab/metric-dashboard](https://github.com/snubilab/metric-dashboard)
 
@@ -177,7 +171,7 @@ Core topics: CT metal artifact reduction, few-shot learning, target-trial emulat
 
 *2026*
 
-- Built a browser for ICML 2026 papers, posters, and workshop materials.
+- Built a research utility for browsing ICML 2026 papers, posters, and workshop materials.
 - Live site: [https://kimyeonghyeon.github.io/ICML_2026_Browser/](https://kimyeonghyeon.github.io/ICML_2026_Browser/)
 - Repository: [https://github.com/KimYeongHyeon/ICML_2026_Browser](https://github.com/KimYeongHyeon/ICML_2026_Browser)
 

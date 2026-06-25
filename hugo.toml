@@ -35,6 +35,10 @@ name = "CV"
 url = "/cv"
 
 [[params.profileMode.buttons]]
+name = "Chronology"
+url = "/chronology"
+
+[[params.profileMode.buttons]]
 name = "Publications"
 url = "/publications"
 
@@ -65,6 +69,12 @@ identifier = "cv"
 name = "CV"
 url = "/cv/"
 weight = 10
+
+[[menu.main]]
+identifier = "chronology"
+name = "Chronology"
+url = "/chronology/"
+weight = 15
 
 [[menu.main]]
 identifier = "about"

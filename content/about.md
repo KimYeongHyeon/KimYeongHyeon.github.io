@@ -9,14 +9,14 @@ summary: "About"
 
 I am a Ph.D student at BiLab, Seoul National University.
 
-My work connects two tracks: robust medical imaging methods, especially CT metal artifact reduction, and agentic AI systems for reproducible real-world evidence generation.
+My work connects two evidence-critical tracks: robust medical imaging and reproducible real-world evidence generation.
 
 ## Education
 
 ### Seoul National University
 **Ph.D Student, Bioengineering**
 
-*2025 - Present*
+*Sep 2025 - Present*
 
 ### Inha University
 **M.S., Computer Engineering**
@@ -31,28 +31,26 @@ My work connects two tracks: robust medical imaging methods, especially CT metal
 ## Career
 
 ### Seoul National University, BiLab
-**Ph.D Student, Bioengineering** | 2025 - Present
+**Ph.D Student, Bioengineering** | Sep 2025 - Present
 
-- Biomedical AI, medical image analysis, and real-world evidence generation
-- CT metal artifact reduction, few-shot learning, and agentic clinical research systems
-- Developed LangGraph-MAR for CT metal artifact reduction
-- Published the work in *Physics in Medicine & Biology*
+- Robust medical imaging and reproducible real-world evidence generation
+- OMOP-CDM, target-trial emulation, cohort construction, and evaluation reliability
 
-### Biomedical Engineering Research Institute, Chungnam National University
+### Chungnam University Medical Engineering Laboratory
 **Visiting Researcher** | Dec 2023 - Dec 2024
 
 - Developed CT metal artifact reduction and enhancement methods
 - Ranked 21st overall in the AAPM Grand Challenge
 
-### DB Insurance (DB손해보험)
-**Senior Staff** | Oct 2022 - Nov 2023
+### DB Insurance Co., Ltd. (DB손해보험)
+**Senior Manager** | Oct 2022 - Aug 2025
 
-- Worked as senior staff at DB Insurance
+- Worked on knowledge acquisition and generative-AI initiatives in an enterprise insurance setting
 
 ### FA Solution
 **AI Researcher** | Mar 2021 - Oct 2022
 
-- Worked as an AI researcher in Seoul, Republic of Korea
+- Worked on applied AI and computer-vision development in a product-facing research setting
 
 ### Intelligent Technology Lab, Inha University
 **Graduate Researcher** | Mar 2018 - Aug 2020
@@ -72,17 +70,16 @@ My work connects two tracks: robust medical imaging methods, especially CT metal
 **TELOS - Target-trial Emulation & Learning-Oriented System**
 
 - Led the team that won the Grand Prize at KCD2025
-- Built a multi-agent framework for emulating registered clinical trials with observational data
+- Built a target-trial emulation workflow for mapping trial protocols to observational cohorts, statistical analysis, and reproducible reporting
 
-## Invited Talks
+## Talks & Presentations
 
 ### SNU AI.MED 26 Gwanak
-**Iterative virtual clinical trial simulation: multi-agent collaboration-based automated real-world evidence generation system**
+**Iterative virtual clinical trial simulation for automated real-world evidence generation**
 
 *Student Research Presentation, SNU AI.MED 26 Gwanak, Seoul National University | Jun 19, 2026*
 
 - Presented in Session 2 of the 2026-1 SNU Medical AI Convergence Talent Training Program Performance Sharing Meeting
-- Venue: Seoul National University Gwanak Campus 43-2 B102
 
 ## Selected Publications
 
@@ -104,16 +101,16 @@ My work connects two tracks: robust medical imaging methods, especially CT metal
 - Repository: [https://github.com/clinical-ontology-embeddings/omop-medcat-silver](https://github.com/clinical-ontology-embeddings/omop-medcat-silver)
 
 ### snubilab/metric-dashboard
-**TypeScript - Educational metric dashboard for medical imaging and ML evaluation**
+**TypeScript - Educational web dashboard for medical imaging and ML evaluation**
 
-- Built an educational React/Vite dashboard for learning medical-imaging and machine-learning evaluation metrics.
+- Built an educational web dashboard for learning medical-imaging and machine-learning evaluation metrics.
 - Live site: [https://snubilab.github.io/metric-dashboard/](https://snubilab.github.io/metric-dashboard/)
 - Repository: [https://github.com/snubilab/metric-dashboard](https://github.com/snubilab/metric-dashboard)
 
 ### KimYeongHyeon/ICML_2026_Browser
 **HTML - ICML 2026 materials browser**
 
-- Built a browser for ICML 2026 papers, posters, and workshop materials.
+- Built a research utility for browsing ICML 2026 papers, posters, and workshop materials.
 - Live site: [https://kimyeonghyeon.github.io/ICML_2026_Browser/](https://kimyeonghyeon.github.io/ICML_2026_Browser/)
 - Repository: [https://github.com/KimYeongHyeon/ICML_2026_Browser](https://github.com/KimYeongHyeon/ICML_2026_Browser)
 

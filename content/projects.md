@@ -14,16 +14,15 @@ summary: "Current and Past Research Projects"
 **Recognition:** Grand Prize, Korea Clinical Datathon 2025
 
 **Description:**  
-TELOS is a multi-agent framework for emulating registered clinical trials using observational clinical datasets. Built for KCD2025 on MIMIC-IV, it connects clinical trial design, information extraction, statistical analysis, and reporting into a reproducible evidence-generation workflow.
+TELOS is a target-trial emulation workflow for mapping registered clinical-trial protocols to observational cohorts, statistical analysis, and reproducible reporting. Built for KCD2025 on MIMIC-IV, it connects clinical trial design, cohort construction, analysis, and evidence generation.
 
 **Key Achievements:**
 - Won the Grand Prize at KCD2025
-- Designed the overall multi-agent architecture
-- Integrated agents for trial protocol extraction, cohort selection from MIMIC-IV, statistical analysis, and automated reporting
+- Designed the workflow for trial protocol extraction, cohort selection from MIMIC-IV, statistical analysis, and automated reporting
 - Demonstrated trial emulation for steroid treatment in severe septic shock
 - Identified high-acuity data limitations and scalability paths to other diseases
 
-**Technologies:** Python, LLM agents, MIMIC-IV, target-trial emulation, statistical analysis
+**Technologies:** Python, MIMIC-IV, target-trial emulation, statistical analysis, clinical reporting
 
 ---
 
@@ -34,7 +33,7 @@ TELOS is a multi-agent framework for emulating registered clinical trials using 
 **Recognition:** Excellence Award, President of the Korea Institute of Science and Technology Award, 2026 AI Co-Scientist Challenge Korea
 
 **Description:**  
-This project develops a multi-agent AI framework for automated target trial emulation using real-world medical data. The workflow decomposes trial emulation into cohort extraction, causal inference, propensity score matching, and clinical report generation.
+This project develops an OMOP-CDM-compatible workflow for target-trial emulation using real-world medical data. The workflow decomposes trial emulation into cohort extraction, causal inference, propensity score matching, and clinical report generation.
 
 **Key Achievements:**
 - Placed 4th overall at the 2026 AI Co-Scientist Challenge Korea
@@ -42,7 +41,7 @@ This project develops a multi-agent AI framework for automated target trial emul
 - Reproduced trends from PLATO, LEADER, and ARISTOTLE using Synthea-based synthetic data
 - Conducted the work through collaboration among BiLab, PILL, and Pathfinder Lab
 
-**Technologies:** Python, LLM agents, OMOP-CDM, causal inference, propensity score matching, clinical report generation
+**Technologies:** Python, OMOP-CDM, causal inference, propensity score matching, clinical report generation
 
 ---
 
@@ -67,18 +66,18 @@ mimic-iv-omop-pg is a PostgreSQL port of the OHDSI/MIMIC ETL. It lets MIMIC-IV r
 ### LangGraph-based CT Metal Artifact Reduction
 
 **Duration:** Dec 2024 – Present  
-**Role:** Independent Researcher  
+**Role:** Researcher, Seoul National University BiLab
 **Advisors:** Prof. Kyungsang Kim (Harvard Medical School, Massachusetts General Hospital), Prof. Dongheon Lee
 
 **Description:**  
-This project implements LangGraph-MAR, a graph-based framework for CT metal artifact reduction. The framework combines sinogram inpainting, L1-based metal soft-thresholding, reconstruction, and automated image quality assessment.
+This project studies adaptive CT metal artifact reduction workflows for robust medical image restoration under varying artifact severity, material, size, and location.
 
 **Key Objectives:**
 - Adapt metal thresholds to variations in artifact severity across materials, sizes, and locations
 - Improve structural restoration compared with representative MAR baselines
 - Support robust artifact mitigation across body and head CT protocols
 
-**Technologies:** Python, PyTorch, LangGraph, Medical Imaging (DICOM), CT Image Processing
+**Technologies:** Python, PyTorch, Medical Imaging (DICOM), CT Image Processing
 
 ---
 
@@ -88,7 +87,7 @@ This project implements LangGraph-MAR, a graph-based framework for CT metal arti
 
 **Duration:** Dec 2023 – Dec 2024  
 **Role:** Visiting Researcher  
-**Institution:** Biomedical Engineering Research Institute, Chungnam National University  
+**Institution:** Chungnam University Medical Engineering Laboratory
 **Supervisor:** Prof. Kyungsang Kim, Prof. Dongheon Lee
 
 **Description:**  
@@ -97,7 +96,7 @@ Developed a CT metal artifact reduction and enhancement model specifically for t
 **Key Achievements:**
 - Ranked 21st overall in the AAPM Grand Challenge
 - Developed CT metal artifact reduction and enhancement model
-- Designed graph-based approach for out-of-distribution challenges using LangGraph
+- Evaluated restoration behavior across diverse artifact patterns
 - Successfully handled diverse artifact patterns in clinical CT images
 
 **Technologies:** Python, PyTorch, Medical Imaging, CT Reconstruction, Deep Learning
@@ -174,8 +173,8 @@ My research focuses on developing AI solutions for medical imaging challenges, w
 - **Medical Image Analysis:** CT artifact reduction, echocardiography analysis
 - **Few-shot Learning:** Adapting models to work with limited medical data
 - **Meta-Learning:** Rapid adaptation to new medical imaging tasks
-- **Clinical Evidence Generation:** Multi-agent workflows for observational clinical data and target-trial emulation
-- **Graph-based Methods:** Leveraging graph structures for medical image processing
+- **Clinical Evidence Generation:** target-trial emulation workflows for observational clinical data
+- **Evaluation Reliability:** robust benchmarks, ablations, and reproducible analysis pipelines
 - **Clinical Informatics:** OMOP-CDM and MIMIC-IV workflows for reproducible real-world evidence
 - **Out-of-distribution Generalization:** Ensuring robust performance across diverse datasets
 
