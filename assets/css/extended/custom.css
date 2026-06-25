@@ -614,7 +614,7 @@ body:has(.chronology-page) > .main {
 }
 
 .chronology-sheet {
-  width: min(1440px, calc(100vw - 48px));
+  width: min(1460px, calc(100vw - 32px));
 }
 
 .chronology-masthead {
@@ -639,7 +639,7 @@ body:has(.chronology-page) > .main {
 .chronology-years,
 .chronology-row {
   display: grid;
-  grid-template-columns: 126px repeat(9, minmax(72px, 1fr));
+  grid-template-columns: 112px repeat(9, minmax(72px, 1fr));
 }
 
 .chronology-years {
@@ -700,7 +700,7 @@ body:has(.chronology-page) > .main {
   box-shadow: none;
   color: #1c1c1c;
   height: 28px;
-  left: calc(14px + ((var(--start) - 1) / 108) * (100% - 28px));
+  left: calc(8px + ((var(--start) - 1) / 108) * (100% - 16px));
   line-height: 1.25;
   min-width: 0;
   overflow: hidden;
@@ -710,7 +710,12 @@ body:has(.chronology-page) > .main {
   text-overflow: ellipsis;
   top: 8px;
   white-space: nowrap;
-  width: calc(((var(--end) - var(--start)) / 108) * (100% - 28px));
+  width: calc(((var(--end) - var(--start)) / 108) * (100% - 16px));
+}
+
+.chronology-card.chronology-end {
+  left: min(calc(8px + ((var(--start) - 1) / 108) * (100% - 16px)), calc(100% - 168px));
+  width: max(calc(((var(--end) - var(--start)) / 108) * (100% - 16px)), 160px);
 }
 
 .chronology-card b {
@@ -748,7 +753,7 @@ body:has(.chronology-page) > .main {
   min-height: 110px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 820px) {
   body:has(.chronology-page) > .main {
     padding: 18px 10px 40px;
   }
