@@ -614,7 +614,7 @@ body:has(.chronology-page) > .main {
 }
 
 .chronology-sheet {
-  width: 1120px;
+  width: min(1440px, calc(100vw - 48px));
 }
 
 .chronology-masthead {
@@ -740,6 +740,10 @@ body:has(.chronology-page) > .main {
 
   .chronology-hero h1 {
     font-size: 34px;
+  }
+
+  .chronology-sheet {
+    width: 100%;
   }
 
   .chronology-years {
