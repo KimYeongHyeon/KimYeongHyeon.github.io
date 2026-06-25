@@ -663,7 +663,7 @@ body:has(.chronology-page) > .main {
 
 .chronology-row {
   border-bottom: 1px solid #e5e7eb;
-  min-height: 56px;
+  min-height: 66px;
 }
 
 .chronology-row:last-child {
@@ -688,7 +688,7 @@ body:has(.chronology-page) > .main {
   background-image: linear-gradient(to right, #e5e7eb 1px, transparent 1px);
   background-size: calc(100% / 9) 100%;
   grid-column: 2 / -1;
-  min-height: 56px;
+  min-height: 66px;
   position: relative;
 }
 
@@ -699,37 +699,53 @@ body:has(.chronology-page) > .main {
   border-radius: 3px;
   box-shadow: none;
   color: #1c1c1c;
+  height: 28px;
   left: calc(14px + ((var(--start) - 1) / 108) * (100% - 28px));
-  line-height: 1.35;
+  line-height: 1.25;
   min-width: 0;
+  overflow: hidden;
   overflow-wrap: anywhere;
-  padding: 4px 6px;
+  padding: 5px 7px;
   position: absolute;
-  top: 6px;
+  text-overflow: ellipsis;
+  top: 8px;
+  white-space: nowrap;
   width: calc(((var(--end) - var(--start)) / 108) * (100% - 28px));
 }
 
 .chronology-card b {
-  display: block;
-  font-size: 10.5px;
+  display: inline;
+  font-size: 11.5px;
+}
+
+.chronology-card b::after {
+  content: " · ";
+  font-weight: 500;
 }
 
 .chronology-card span {
   color: var(--ink-500);
-  display: block;
-  font-size: 9px;
-  margin-top: 1px;
+  display: inline;
+  font-size: 9.8px;
 }
 
-.chronology-card.lower { top: 28px; }
-.chronology-card.lowest { top: 50px; }
+.chronology-card.lower { top: 42px; }
+.chronology-card.lowest { top: 76px; }
+
+.chronology-row:has(.lower) {
+  min-height: 76px;
+}
+
+.chronology-row:has(.lower) .chronology-track {
+  min-height: 76px;
+}
 
 .chronology-row:has(.lowest) {
-  min-height: 72px;
+  min-height: 110px;
 }
 
 .chronology-row:has(.lowest) .chronology-track {
-  min-height: 72px;
+  min-height: 110px;
 }
 
 @media (max-width: 760px) {
@@ -770,9 +786,22 @@ body:has(.chronology-page) > .main {
   }
 
   .chronology-card {
+    height: auto;
     left: auto;
+    overflow-wrap: anywhere;
     position: static;
+    text-overflow: initial;
     top: auto;
+    white-space: normal;
     width: auto;
+  }
+
+  .chronology-card b,
+  .chronology-card span {
+    display: block;
+  }
+
+  .chronology-card b::after {
+    content: "";
   }
 }
