@@ -633,7 +633,7 @@ body:has(.chronology-page) > .main {
 .chronology-board {
   background: #ffffff;
   border-top: 1px solid #d8d8d8;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .chronology-years,
@@ -716,6 +716,23 @@ body:has(.chronology-page) > .main {
 .chronology-card.chronology-end {
   left: min(calc(8px + ((var(--start) - 1) / 108) * (100% - 16px)), calc(100% - 168px));
   width: max(calc(((var(--end) - var(--start)) / 108) * (100% - 16px)), 160px);
+}
+
+.chronology-card:hover,
+.chronology-card:focus-visible {
+  box-shadow: 0 8px 22px rgb(0 0 0 / 0.14);
+  height: auto;
+  min-height: 44px;
+  overflow: visible;
+  white-space: normal;
+  width: min(340px, calc(100% - 16px));
+  z-index: 20;
+}
+
+.chronology-card.chronology-end:hover,
+.chronology-card.chronology-end:focus-visible {
+  left: auto;
+  right: 8px;
 }
 
 .chronology-card b {
