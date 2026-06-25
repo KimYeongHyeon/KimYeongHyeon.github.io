@@ -725,11 +725,10 @@ body:has(.chronology-page) > .main {
 .chronology-card:hover,
 .chronology-card:focus-visible {
   box-shadow: 0 8px 22px rgb(0 0 0 / 0.14);
-  height: auto;
-  min-height: 44px;
+  height: 28px;
   overflow: visible;
-  white-space: normal;
-  width: min(340px, calc(100% - 16px));
+  white-space: nowrap;
+  width: min(620px, calc(100% - var(--left) - 8px));
   z-index: 20;
 }
 
@@ -737,6 +736,7 @@ body:has(.chronology-page) > .main {
 .chronology-card.chronology-end:focus-visible {
   left: auto;
   right: 8px;
+  width: min(620px, calc(100vw - 48px));
 }
 
 .chronology-card b {
