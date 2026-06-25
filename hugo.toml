@@ -1,4 +1,4 @@
-baseURL = 'https://kimyeonghyeon.github.io/CV/'
+baseURL = 'https://kimyeonghyeon.github.io/'
 locale = 'en-us'
 title = 'CV'
 theme = 'PaperMod'
