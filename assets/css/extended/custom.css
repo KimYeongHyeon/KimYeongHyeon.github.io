@@ -606,7 +606,7 @@ body:has(.chronology-page) {
 body:has(.chronology-page) > .main {
   max-width: none;
   min-height: 100dvh;
-  padding: 40px 16px;
+  padding: 24px 16px;
 }
 
 .chronology-page {
@@ -618,15 +618,15 @@ body:has(.chronology-page) > .main {
 }
 
 .chronology-masthead {
-  padding-bottom: 24px;
+  padding: 26px 40px 18px;
 }
 
 .chronology-subtitle {
   color: var(--ink-700);
   font-family: var(--font-sans);
-  font-size: 15px;
-  line-height: 1.6;
-  margin: 14px 0 0;
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 10px 0 0;
   max-width: 760px;
 }
 
@@ -643,16 +643,17 @@ body:has(.chronology-page) > .main {
 }
 
 .chronology-years {
-  background: #eef3f8;
+  background: #ffffff;
   border-bottom: 1px solid #dcdfe5;
-  color: #4d5967;
-  font-size: 12px;
+  color: var(--ink-500);
+  font-family: var(--font-grotesk);
+  font-size: 10.5px;
   font-weight: 700;
 }
 
 .chronology-years span {
   border-left: 1px solid #dcdfe5;
-  padding: 10px 8px;
+  padding: 6px 8px;
   text-align: center;
 }
 
@@ -662,7 +663,7 @@ body:has(.chronology-page) > .main {
 
 .chronology-row {
   border-bottom: 1px solid #e5e7eb;
-  min-height: 76px;
+  min-height: 56px;
 }
 
 .chronology-row:last-child {
@@ -671,66 +672,64 @@ body:has(.chronology-page) > .main {
 
 .chronology-row h2 {
   align-items: center;
-  background: #fafafa;
+  background: #ffffff;
   border-right: 1px solid #dcdfe5;
   display: flex;
-  font-size: 14px;
+  font-family: var(--font-grotesk);
+  font-size: 11px;
   font-weight: 800;
   line-height: 1.25;
   margin: 0;
-  padding: 14px 16px;
+  padding: 10px 14px;
+  text-transform: uppercase;
 }
 
 .chronology-track {
   background-image: linear-gradient(to right, #e5e7eb 1px, transparent 1px);
   background-size: calc(100% / 9) 100%;
   grid-column: 2 / -1;
-  min-height: 76px;
+  min-height: 56px;
   position: relative;
 }
 
 .chronology-card {
-  border-left: 4px solid #005ba2;
-  border-radius: 6px;
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-left: 3px solid var(--accent-blue);
+  border-radius: 3px;
+  box-shadow: none;
   color: #1c1c1c;
   left: calc(14px + ((var(--start) - 1) / 108) * (100% - 28px));
   line-height: 1.35;
   min-width: 0;
   overflow-wrap: anywhere;
-  padding: 5px 7px;
+  padding: 4px 6px;
   position: absolute;
-  top: 9px;
+  top: 6px;
   width: calc(((var(--end) - var(--start)) / 108) * (100% - 28px));
 }
 
 .chronology-card b {
   display: block;
-  font-size: 11px;
+  font-size: 10.5px;
 }
 
 .chronology-card span {
-  color: #484848;
+  color: var(--ink-500);
   display: block;
-  font-size: 9.8px;
-  margin-top: 2px;
+  font-size: 9px;
+  margin-top: 1px;
 }
 
-.chronology-card.education { background: #e8f2e0; border-color: #5a8f3d; }
-.chronology-card.career { background: #edf4ff; border-color: #3d73c4; }
-.chronology-card.research { background: #fff2dc; border-color: #d07a00; }
-.chronology-card.honor { background: #fff8cf; border-color: #c7a300; }
-.chronology-card.open { background: #e9f7f1; border-color: #238663; }
-
-.chronology-card.lower { top: 36px; }
-.chronology-card.lowest { top: 63px; }
+.chronology-card.lower { top: 28px; }
+.chronology-card.lowest { top: 50px; }
 
 .chronology-row:has(.lowest) {
-  min-height: 96px;
+  min-height: 72px;
 }
 
 .chronology-row:has(.lowest) .chronology-track {
-  min-height: 96px;
+  min-height: 72px;
 }
 
 @media (max-width: 760px) {
