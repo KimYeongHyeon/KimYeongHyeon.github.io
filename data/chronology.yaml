@@ -1,0 +1,103 @@
+years:
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  - 2026
+start: 2018-01-01
+end: 2026-12-31
+rows:
+  - title: Education
+    items:
+      - title: B.S.
+        meta: Inha · Feb 2018
+        date: 2018-02-01
+        level: lower
+      - title: M.S., Computer Engineering
+        meta: Aug 2020
+        date: 2020-08-01
+      - title: Ph.D, Bioengineering
+        meta: Seoul National University · Sep 2025-Present
+        start: 2025-09-01
+        end: 2026-12-31
+        edge: end
+  - title: Career
+    items:
+      - title: AI Researcher
+        meta: FA Solution · Mar 2021-Oct 2022
+        start: 2021-03-01
+        end: 2022-10-01
+      - title: Senior Manager
+        meta: DB Insurance Co., Ltd. · Oct 2022-Aug 2025
+        start: 2022-10-01
+        end: 2025-08-01
+        level: lower
+      - title: Visiting Researcher
+        meta: CNU Medical Engineering Lab · Dec 2023-Dec 2024
+        start: 2023-12-01
+        end: 2024-12-01
+        level: lowest
+      - title: Ph.D Student
+        meta: Seoul National University, BiLab · Sep 2025-Present
+        start: 2025-09-01
+        end: 2026-12-31
+        edge: end
+  - title: Research
+    items:
+      - title: Representation Learning
+        meta: Open-set detection · active learning
+        start: 2018-03-01
+        end: 2020-08-01
+      - title: Few-shot Clinical Imaging
+        meta: Echocardiography · 2022
+        start: 2022-01-01
+        end: 2022-12-01
+      - title: CT Metal Artifact Reduction
+        meta: Medical image restoration and enhancement
+        start: 2023-12-01
+        end: 2026-12-31
+      - title: Clinical Evidence
+        meta: Target-trial emulation · OMOP-CDM
+        start: 2025-09-01
+        end: 2026-12-31
+        level: lower
+        edge: end
+  - title: Awards & Talks
+    items:
+      - title: AAPM Grand Challenge
+        meta: 21st overall · 2024
+        date: 2024-06-01
+      - title: Korea Clinical Datathon
+        meta: Grand Prize · Oct 2025
+        date: 2025-10-01
+        level: lower
+        edge: end
+      - title: AI Co-Scientist Korea
+        meta: Excellence Award · 2026
+        date: 2026-03-01
+        edge: end
+      - title: SNU AI.MED 26
+        meta: Research presentation · Jun 2026
+        date: 2026-06-19
+        level: lowest
+        edge: end
+  - title: Open Source
+    items:
+      - title: omop-medcat-silver
+        meta: OMOP terminology dataset
+        date: 2026-01-01
+        edge: end
+      - title: metric-dashboard
+        meta: Medical AI metric education
+        date: 2026-01-01
+        level: lower
+        edge: end
+      - title: ICML_2026_Browser
+        meta: Research browser utility
+        date: 2026-01-01
+        level: lowest
+        edge: end

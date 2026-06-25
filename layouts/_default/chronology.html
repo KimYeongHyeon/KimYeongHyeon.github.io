@@ -1,4 +1,8 @@
 {{- define "main" }}
+{{- $chronology := hugo.Data.chronology }}
+{{- $timelineStart := time.AsTime $chronology.start }}
+{{- $timelineEnd := time.AsTime $chronology.end }}
+{{- $timelineSpan := float (sub $timelineEnd.Unix $timelineStart.Unix) }}
 <article class="resumate-page chronology-page theme-light">
   <div class="resumate-sheet chronology-sheet">
     <header class="resumate-masthead chronology-masthead">
@@ -10,56 +14,28 @@
     <section class="chronology-board" aria-label="Kim YeongHyeon chronology">
       <div class="chronology-years" aria-hidden="true">
         <span></span>
-        <span>2018</span><span>2019</span><span>2020</span><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span>
+        {{- range $chronology.years }}<span>{{ . }}</span>{{- end }}
       </div>
 
-    <div class="chronology-row">
-      <h2>Education</h2>
-      <div class="chronology-track">
-        <div class="chronology-card chronology-dot education lower" tabindex="0" style="--start: 2; --end: 15;"><b>B.S.</b><span>Inha · Feb 2018</span></div>
-        <div class="chronology-card education" tabindex="0" style="--start: 3; --end: 33;"><b>M.S., Computer Engineering</b><span>Aug 2020</span></div>
-        <div class="chronology-card chronology-end education" tabindex="0" style="--start: 93; --end: 109;"><b>Ph.D, Bioengineering</b><span>Seoul National University · Sep 2025-Present</span></div>
+      {{- range $chronology.rows }}
+      <div class="chronology-row">
+        <h2>{{ .title }}</h2>
+        <div class="chronology-track">
+          {{- range .items }}
+            {{- $itemStart := time.AsTime (or .start .date) }}
+            {{- $itemEnd := $itemStart }}
+            {{- if .end }}{{ $itemEnd = time.AsTime .end }}{{ end }}
+            {{- $left := mul (div (float (sub $itemStart.Unix $timelineStart.Unix)) $timelineSpan) 100 }}
+            {{- $width := mul (div (float (sub $itemEnd.Unix $itemStart.Unix)) $timelineSpan) 100 }}
+            {{- $classes := slice "chronology-card" }}
+            {{- if .date }}{{ $classes = $classes | append "chronology-point" }}{{ end }}
+            {{- if eq .edge "end" }}{{ $classes = $classes | append "chronology-end" }}{{ end }}
+            {{- with .level }}{{ $classes = $classes | append . }}{{ end }}
+            <div class="{{ delimit $classes " " }}" tabindex="0" style="--left: {{ printf "%.4f" $left }}%; --width: {{ printf "%.4f" $width }}%;"><b>{{ .title }}</b><span>{{ .meta }}</span></div>
+          {{- end }}
+        </div>
       </div>
-    </div>
-
-    <div class="chronology-row">
-      <h2>Career</h2>
-      <div class="chronology-track">
-        <div class="chronology-card career" tabindex="0" style="--start: 39; --end: 59;"><b>AI Researcher</b><span>FA Solution · Mar 2021-Oct 2022</span></div>
-        <div class="chronology-card career lower" tabindex="0" style="--start: 58; --end: 93;"><b>Senior Manager</b><span>DB Insurance Co., Ltd. · Oct 2022-Aug 2025</span></div>
-        <div class="chronology-card career lowest" tabindex="0" style="--start: 72; --end: 85;"><b>Visiting Researcher</b><span>CNU Medical Engineering Lab · Dec 2023-Dec 2024</span></div>
-        <div class="chronology-card chronology-end career" tabindex="0" style="--start: 93; --end: 109;"><b>Ph.D Student</b><span>Seoul National University, BiLab · Sep 2025-Present</span></div>
-      </div>
-    </div>
-
-    <div class="chronology-row">
-      <h2>Research</h2>
-      <div class="chronology-track">
-        <div class="chronology-card research" tabindex="0" style="--start: 3; --end: 33;"><b>Representation Learning</b><span>Open-set detection · active learning</span></div>
-        <div class="chronology-card research" tabindex="0" style="--start: 49; --end: 63;"><b>Few-shot Clinical Imaging</b><span>Echocardiography · 2022</span></div>
-        <div class="chronology-card research" tabindex="0" style="--start: 72; --end: 109;"><b>CT Metal Artifact Reduction</b><span>Medical image restoration and enhancement</span></div>
-        <div class="chronology-card chronology-end research lower" tabindex="0" style="--start: 93; --end: 109;"><b>Clinical Evidence</b><span>Target-trial emulation · OMOP-CDM</span></div>
-      </div>
-    </div>
-
-    <div class="chronology-row">
-      <h2>Awards & Talks</h2>
-      <div class="chronology-track">
-        <div class="chronology-card honor" tabindex="0" style="--start: 75; --end: 87;"><b>AAPM Grand Challenge</b><span>21st overall · 2024</span></div>
-        <div class="chronology-card chronology-end honor lower" tabindex="0" style="--start: 89; --end: 106;"><b>Korea Clinical Datathon</b><span>Grand Prize · Oct 2025</span></div>
-        <div class="chronology-card chronology-end honor" tabindex="0" style="--start: 97; --end: 109;"><b>AI Co-Scientist Korea</b><span>Excellence Award · 2026</span></div>
-        <div class="chronology-card chronology-end honor lowest" tabindex="0" style="--start: 99; --end: 109;"><b>SNU AI.MED 26</b><span>Research presentation · Jun 2026</span></div>
-      </div>
-    </div>
-
-    <div class="chronology-row">
-      <h2>Open Source</h2>
-      <div class="chronology-track">
-        <div class="chronology-card chronology-end open" tabindex="0" style="--start: 97; --end: 109;"><b>omop-medcat-silver</b><span>OMOP terminology dataset</span></div>
-        <div class="chronology-card chronology-end open lower" tabindex="0" style="--start: 97; --end: 109;"><b>metric-dashboard</b><span>Medical AI metric education</span></div>
-        <div class="chronology-card chronology-end open lowest" tabindex="0" style="--start: 97; --end: 109;"><b>ICML_2026_Browser</b><span>Research browser utility</span></div>
-      </div>
-    </div>
+      {{- end }}
     </section>
   </div>
 </article>

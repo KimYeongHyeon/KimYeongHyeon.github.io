@@ -700,7 +700,7 @@ body:has(.chronology-page) > .main {
   box-shadow: none;
   color: #1c1c1c;
   height: 28px;
-  left: calc(8px + ((var(--start) - 1) / 108) * (100% - 16px));
+  left: calc(8px + var(--left));
   line-height: 1.25;
   min-width: 0;
   overflow: hidden;
@@ -710,12 +710,16 @@ body:has(.chronology-page) > .main {
   text-overflow: ellipsis;
   top: 8px;
   white-space: nowrap;
-  width: calc(((var(--end) - var(--start)) / 108) * (100% - 16px));
+  width: min(max(var(--width), 120px), calc(100% - var(--left) - 8px));
+}
+
+.chronology-card.chronology-point {
+  width: 140px;
 }
 
 .chronology-card.chronology-end {
-  left: min(calc(8px + ((var(--start) - 1) / 108) * (100% - 16px)), calc(100% - 168px));
-  width: max(calc(((var(--end) - var(--start)) / 108) * (100% - 16px)), 160px);
+  left: min(calc(8px + var(--left)), calc(100% - 168px));
+  width: min(max(var(--width), 160px), calc(100% - var(--left) - 8px));
 }
 
 .chronology-card:hover,
