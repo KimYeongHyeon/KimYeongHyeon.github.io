@@ -270,6 +270,31 @@ body:has(.resumate-page) > .main {
   color: var(--accent-blue);
 }
 
+.resumate-viewnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.resumate-viewnav a {
+  border: 1px solid #d2d2d2;
+  border-radius: var(--radius-sm);
+  color: var(--ink-700);
+  font-family: var(--font-grotesk);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.resumate-viewnav a:hover,
+.resumate-viewnav a:focus-visible,
+.resumate-viewnav a[aria-current="page"] {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
 .resumate-k {
   color: var(--accent-blue);
   font-size: 9.5px;
